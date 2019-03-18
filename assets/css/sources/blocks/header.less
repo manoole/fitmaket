@@ -1,0 +1,69 @@
+.header {
+  background: @color-white;
+  font-size: 2.4rem;
+  font-weight: lighter;
+  color: @color-blackish;
+  padding: 0 46.5rem 0 48rem;
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 10rem;
+  }
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__logo {
+    position: relative;
+    margin-top: 1rem;
+  }
+  &__logo-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(53%, 25%);
+  }
+  &__name {
+    margin-left: 3rem;
+  }
+  &__call {
+    margin-top: 0.3rem;
+  }
+  &__phone {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__number {
+    font-size: 3rem;
+    &--bold {
+      font-weight: normal;
+    }
+  }
+  &__icon {
+    align-self: end;
+  }
+  &__call-btn {
+    margin-top: 1.3rem;
+    border: 0;
+    color: @color-white;
+    background: @color-green;
+    font-size: 2.2rem;
+    font-weight: lighter;
+    padding: .6rem 4rem .5rem 3rem;
+    width: 25rem;
+    text-align: center;
+    cursor: pointer;
+    &:hover {
+     background: darken(@color-green, 3%);
+    }
+    &:active {
+      background: darken(@color-green, 5%);
+    }
+    &:focus {
+      background: darken(@color-green, 5%);
+    }
+  }
+}

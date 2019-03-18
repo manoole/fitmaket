@@ -1,0 +1,39 @@
+.feedback {
+  background: @color-white;
+  &__container {
+    padding: 4.9rem 46rem 6.6rem 48rem;
+  }
+  &__title {
+    .head-style();
+    margin: 0;
+  }
+  &__wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 3.5rem;
+    min-height: 55rem;
+  }
+  &__block {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__block-reverted {
+    flex-direction: row-reverse;
+  }
+  &__text {
+    font-size: 1.8rem;
+    font-style: italic;
+    font-weight: 100;
+    padding: 0 2rem;
+    &--name {
+      color: @color-blue;
+      font-style: normal;
+      text-align: right;
+    }
+  }
+  &__img {
+    align-self: flex-start;
+    flex-shrink: 0;
+  }
+}

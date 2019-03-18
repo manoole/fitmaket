@@ -1,0 +1,49 @@
+.slider {
+  &__title {
+    background: url("../../assets/images/back-blue-small.png") no-repeat center/cover;
+    color: @color-white;
+    display: flex;
+    justify-content: space-between;
+    max-height: 6rem;
+  }
+  &__title-regular {
+    font-size: 2.2rem;
+    font-weight: normal;
+    padding: 1.2rem 1.8rem 1.4rem 1.6rem;
+    &--s {
+      text-decoration: line-through;
+      font-weight: lighter;
+    }
+    &--l {
+      font-weight: lighter;
+    }
+    &--b {
+      font-size: 3rem;
+      font-weight: 600;
+    }
+  }
+  &__title-discount {
+    background: url("../../assets/images/back-yellow-skewed.png") no-repeat center/cover;
+    padding: 1.1rem 1.5rem 1.9rem 1.4rem;
+    font-size: 3rem;
+    font-weight: 700;
+  }
+  &__wrap {
+    padding: 0 5.8rem 0 7.9rem;
+    width: 41rem;
+    background: @color-white;
+  }
+  &__block {
+    overflow: hidden;
+    display: flex;
+  }
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+  }
+  &__link {
+    width: 7.1rem;
+    height: 7.1rem;
+  }
+}

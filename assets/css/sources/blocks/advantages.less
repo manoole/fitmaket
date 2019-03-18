@@ -1,0 +1,29 @@
+.advantages {
+  background: @color-white;
+  background: url("../../assets/images/back_blue.png") no-repeat center/cover;
+  &__container {
+    min-height: 40rem;
+    padding: 3rem 47rem 3.8rem 49rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-content: space-between;
+  }
+  &__group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: 30rem;
+    justify-content: space-evenly;
+  }
+  &__description {
+    font-size: 3rem;
+    color: @color-white;
+    font-weight: bold;
+    text-align: center;
+    &--light {
+      font-weight: 100;
+      font-size: 2.4rem;
+    }
+  }
+}

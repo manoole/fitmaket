@@ -1,0 +1,114 @@
+.order-form {
+  &__fieldset {
+    background: @color-white;
+    margin: 0;
+    padding: 0 1rem 1rem;
+    font-size: 1.4rem;
+    font-weight: lighter;
+    border: 0;
+    width: 35rem;
+    display: flex;
+    flex-direction: column;
+  }
+  &__title {
+    background: @color-yellow;
+    padding: 0.7rem 3rem;
+    text-align: center;
+    color: @color-white;
+    width: 35rem;
+    &--b {
+      font-size: 2.4rem;
+      font-weight: normal;
+    }
+  }
+  &__group {
+    margin-top: 1rem;
+    position: relative;
+  }
+  &__input {
+    padding: .7rem 1.5rem 1rem 1.7rem;
+    font-size: 1.8rem;
+    font-style: italic;
+    font-weight: lighter;
+    border: 0;
+    background: @color-grey;
+    width: 100%;
+    color: @color-input;
+    &:focus {
+      background: darken(@color-grey, 10%);
+      border: 0;
+    }
+  }
+  &__label {
+    &--r {
+      color: @color-red;
+    }
+  }
+  &__additional {
+       display: flex;
+       justify-content: space-between;
+       position: relative;
+       padding-left: 3.2rem;
+     }
+  &__checkbox {
+    position: absolute;
+    width: 0;
+    height: 0;
+    z-index: -100;
+  }
+  &__add-label {
+    :before {
+      content: '';
+      background: url("../../assets/images/checkbox-uncheck.png");
+      height: 2rem;
+      width: 2rem;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+  &__checkbox:checked + &__add-label::before {
+    content: '';
+    background: url("../../assets/images/checkbox-checked.png");
+    height: 2rem;
+    width: 2rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  &__more-btn {
+    border: 0;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    color: @color-white;
+    background: @color-yellowest;
+    position: relative;
+    cursor: pointer;
+    &:after {
+      content: '?';
+      position: absolute;
+      top: 0;
+      transform: translate(-50%, 10%);
+    }
+  }
+  &__order-btn {
+    margin-top: 1rem;
+    border: 0;
+    background: @color-red;
+    color: @color-white;
+    font-size: 2.4rem;
+    font-weight: lighter;
+    padding: 2rem 10.7rem 1.4rem 10.6rem;
+    cursor: pointer;
+    &:hover {
+      background: darken(@color-red, 3%);
+    }
+    &:active {
+      background: darken(@color-red, 5%);
+    }
+    &:focus {
+      background: darken(@color-red, 5%);
+    }
+  }
+}
